@@ -1,0 +1,60 @@
+// fonts
+@mixin font($ff, $fs, $fw, $lh, $ls, $fc) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $fc;
+}
+
+@mixin flex($disp, $jc, $ai, $fd, $fw) {
+  display: $disp;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+}
+
+@mixin transition($one, $two, $three, $time, $func) {
+  transition-property: $one, $two, $three;
+  transition-duration: $time;
+  transition-timing-function: $func;
+}
+
+@mixin container($wid, $pl, $pr, $ml, $mr, $disp) {
+  width: $wid;
+  padding-left: $pl;
+  padding-right: $pr;
+  margin-left: $ml;
+  margin-right: $mr;
+  display: $disp;
+}
+
+@mixin section($pt, $pb) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin list($disp, $fw, $mt, $mr, $mb, $ml) {
+  display: $disp;
+  flex-wrap: $fw;
+  margin-top: $mt;
+  margin-right: $mr;
+  margin-bottom: $mb;
+  margin-left: $ml;
+}
+
+@mixin item($mt, $mr, $mb, $ml, $q, $gap) {
+  margin-top: $mt;
+  margin-right: $mr;
+  margin-bottom: $mb;
+  margin-left: $ml;
+  flex-basis: calc(100% / #{$q} - #{$gap});
+}
+
+@mixin back_img($br, $bp, $bs) {
+  background-repeat: $br;
+  background-position: $bp;
+  background-size: $bs;
+}
