@@ -1,0 +1,157 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0 auto;
+}
+.container {
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+.section__contacts {
+  background-color: $thirteenth;
+}
+.container__contacts {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 113px;
+}
+.contact__list {
+  display: block;
+  padding-left: 0;
+  list-style: none;
+  background-color: $thirteenth;
+}
+.contact__card {
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  background-color: $first;
+}
+.contact__address {
+  display: block;
+  padding: 43px 21px 43px 20px;
+}
+.card__header {
+  display: flex;
+  padding-top: 0 40px;
+  margin-bottom: 25px;
+}
+.card__name {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 24px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: $first;
+  background-color: $eighth;
+  border-radius: 4px;
+  text-transform: uppercase;
+  &--green {
+    background-color: $tenth;
+    padding: 0 27px;
+  }
+}
+.card__position {
+  padding-bottom: 25px;
+  border-bottom: 1px solid $fourth;
+}
+.card__title {
+  margin-bottom: 10px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: $third;
+  &--schedule {
+    margin-bottom: 0;
+  }
+}
+.card__address {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: $sixth;
+}
+.card__schedule {
+  padding: 25px 0;
+  border-bottom: 1px solid $fourth;
+}
+.schedule__first {
+  margin-bottom: 10px;
+}
+.card__time {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  color: $fifth;
+}
+.card__contacts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+.card__link {
+  text-decoration: none;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: $sixth;
+}
+.contacts__buttons {
+  margin-top: 54px;
+  list-style: none;
+  display: block;
+  padding-left: 0;
+  text-align: center;
+}
+.button__items {
+  margin-bottom: 10px;
+}
+.button__item {
+  min-width: 162px;
+  min-height: 44px;
+  background: $fifteenth;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: $first;
+  &--second {
+    color: $second;
+    background: $first;
+  }
+}
