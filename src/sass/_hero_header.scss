@@ -1,3 +1,21 @@
-img {
-    display: block;
+.header {
+    padding-top: 6px;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle {
+    width: 20px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
 }
