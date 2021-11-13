@@ -8,14 +8,14 @@
 }
 
 .product__container-pretitle{
-    @include font (inherit, 18px, 400, 1.17, $fifth);
+    @include font (inherit, 18px, 400, 1.17, null, $fifth);
         @media screen and (max-width: 767px){
          margin-bottom: 15px;
         } 
 }
 
 .products__container-title{
-    @include font (inherit, 34px, 400, 1.15, $second);
+    @include font (inherit, 34px, 400, 1.15, null, $second);
     @media screen and (max-width: 767px){
          margin-bottom: 144px;
         }       
@@ -79,12 +79,12 @@ background-image: url(../images/products/milkshake-desc-1x.png);
 }
 
 .products-list__container-title{
-    @include font (inherit, 20px, 400, 1.15, $first);
+    @include font (inherit, 20px, 400, 1.15, null, $first);
     margin-bottom: 66px;
 }
 
 .products-list__container-text{
-    @include font (inherit, 14px, 700, 1.52, $first);
+    @include font (inherit, 14px, 700, 1.52, null, $first);
 }
 
 .products-list__container{
