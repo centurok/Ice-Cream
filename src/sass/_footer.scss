@@ -1,0 +1,128 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  background-color: $thirteenth;
+  width: 100vw;
+}
+.footer__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100vw;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+.footer__textwrap {
+  padding: 0 0 43px 0;
+  margin: 0 auto 0 0;
+  width: 234px;
+}
+.footer__subtext {
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: $fifth;
+  list-style: none;
+  margin-bottom: 17px;
+}
+.footer__text {
+  font-family: 'Titan One', cursive;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $second;
+  list-style: none;
+}
+.footer-list {
+  margin: 0;
+  padding: 0 0 46px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer__item {
+  list-style: none;
+  width: 32px;
+  height: 32px;
+}
+.footer__item:not(:first-child) {
+  margin-left: 28px;
+}
+.footer__link {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: $ninth;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover,
+  &:focus {
+    background-color: $second;
+  }
+}
+.footer__icon1 {
+  width: 18.82px;
+  height: 18.82px;
+  fill: #ffffff;
+}
+.footer__icon2 {
+  width: 19.3px;
+  height: 14.93px;
+  fill: #ffffff;
+}
+.footer__icon3 {
+  width: 8.8px;
+  height: 19.2px;
+  fill: #ffffff;
+}
+.footer__item {
+  list-style: none;
+}
+.footer__contact {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: end;
+  letter-spacing: 0.02em;
+  color: $third;
+  padding-bottom: 43px;
+  margin: 0;
+}
+.footer__contact__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.15;
+  color: $second;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+/*.footer__border {
+  width: 100vw;
+  border-bottom: 1px solid $fourth;
+}*/
+.footer__rights {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  color: $sixth;
+  letter-spacing: 0.02em;
+  margin: 0 auto;
+  padding-top: 22px;
+  width: 150px;
+}
