@@ -8,14 +8,14 @@
 }
 
 .product__container-pretitle{
-    @include font (inherit, 18px, 400, 1.17, null, $fifth);
+    @include font ('Titan One', 18px, 400, 1.17, null, $fifth);
         @media screen and (max-width: 767px){
          margin-bottom: 15px;
         } 
 }
 
 .products__container-title{
-    @include font (inherit, 34px, 400, 1.15, null, $second);
+    @include font ('Titan One', 34px, 400, 1.15, null, $second);
     @media screen and (max-width: 767px){
          margin-bottom: 144px;
         }       
