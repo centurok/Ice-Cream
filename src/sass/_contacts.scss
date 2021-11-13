@@ -155,3 +155,9 @@ ul {
     background: $first;
   }
 }
+.button__icon {
+  margin-left: 12px;
+  &--white {
+    margin-left: 8px;
+  }
+}
