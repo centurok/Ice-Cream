@@ -49,6 +49,7 @@
     transition: all .5s ease-in-out;
     position: relative;
 }*/
+
     
     .customer-section .customer__img {
         display: block;
@@ -227,3 +228,135 @@
         font-size: 0;
         padding: 2px;
     }
+
+
+.customer-section .customer__img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.сustomer__review {
+    width: 96vw;
+    background-color: $sixteenth;
+    margin: auto;
+    @media screen and (min-width: 768px) {
+        max-width: 620px;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 926px;
+        margin: 0 auto;
+    }
+}
+
+.customer-section .customer__text {
+    @include font ('DM Sans', 12px, 500, 1.52, null, $third);
+    font-style: normal;
+    text-align: center;
+    padding: 45px 60px 25px 60px;
+    @media screen and (min-width: 768px) {
+        @include font ('DM Sans', 14px, 500, 2.16, null, $third);
+        padding: 45px 80px 35px 80px;
+    }
+    @media screen and (min-width: 1280px) {
+        @include font ('DM Sans', 16px, 500, 1.86, null, $third);
+        padding: 45px 85px 40px 85px;
+    }
+}
+
+.customer__thumb--text {
+    @include font ('DM Sans', 12px, 500, 2.55, null, $third);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+        @include font ('DM Sans', 16px, 500, 1.86, null, $third);
+        margin-bottom: 35px;
+    }
+    @media screen and (min-width: 1280px) {
+        @include font ('DM Sans', 20px, 500, 1.86, null, $third);
+        margin-bottom: 35px;
+    }
+}
+
+.сustomer__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.сustomer__dots  {
+    & .dot:not(:last-child) {
+        margin-right: 18px;
+    }
+    
+    
+    &:nth-child(3) {
+        margin-bottom: 0;
+    }
+}
+
+.сustomer__dots--svg {
+    fill: $eleventh;
+    &.active {
+        fill: $fourteenth;
+    }
+}
+
+.customer-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+        margin-top: 24px;
+        margin-bottom: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.costomer-three--dots {
+    position: relative;
+    background-color: $seventh;
+    border-radius: 50%;
+    font-size: 0;
+    margin: 0px;
+    padding: 2px;
+}
+
+.costomer-three--dots:before {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    content: '';
+    background-color: $seventh;
+    border-radius: 50%;
+    font-size: 0;
+    padding: 2px;
+}
+
+.costomer-three--dots:after {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    content: '';
+    background-color: $seventh;
+    border-radius: 50%;
+    font-size: 0;
+    padding: 2px;
+}
+
