@@ -1,4 +1,6 @@
 .header {
+    position: absolute;
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 6px;
@@ -33,7 +35,7 @@
     padding-left: 20px;
     padding-top: 193px;
     padding-bottom: 203px;
-    height: 447px;
+    height: 502px;
     background-color: $twelfth;
     background-image: url(../images/hero/hero-ice-cream-mob-1x.png), url(../images/hero/hero-ellipse-rose-mob-1x.png);
     background-repeat: no-repeat;
