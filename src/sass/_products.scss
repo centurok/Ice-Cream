@@ -158,17 +158,26 @@ background-image: url(../images/products/ice-cream-desc-1x.png);
     @include font ('Titan One', 20px, 400, 1.15, null, $first);
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    margin-bottom: 66px;
+    margin-bottom: 30px;
     @media screen and (min-width: 768px){
-        margin-bottom: 66px;
+        margin-bottom: 30px;
     }
         @media screen and (min-width: 1200px){
-        margin-bottom: 70px;
+        margin-bottom: 32px;
     }
 }
 
 .products-list__container-text{
     @include font ('DM Sans', 14px, 700, 1.52, null, $first);
+    margin-top: 30px;
+    height: 124px;
+    overflow-y: scroll;
+        @media screen and (min-width: 768px){
+        margin-top: 30px;
+    }
+        @media screen and (min-width: 1200px){
+        margin-top: 32px;
+    }
 }
 
 .products-list__container{
@@ -186,5 +195,54 @@ background-image: url(../images/products/ice-cream-desc-1x.png);
     @media screen and (min-width: 1200px){
           padding-top: 163px;
     }
+}
 
+span {
+    position: relative;
+    background-color: $first;
+    border-radius: 5px;
+    font-size: 0;
+    margin-left: 0px;
+    padding: 4px;
+}
+
+span:before {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    content: '';
+    background-color: $first;
+    border-radius: 5px;
+    font-size: 0;
+    padding: 4px;
+
+}
+
+span:after {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    content: '';
+    background-color: $first;
+    border-radius: 5px;
+    font-size: 0;    
+    padding: 4px;
+}
+
+.product-list__container-btn-icon{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: $first;
+margin-top: 30px;
+    @media screen and (min-width: 480px){
+        margin-top: 30px;
+    }
+    @media screen and (min-width: 768px){
+        margin-top: 40px;
+    }
+    @media screen and (min-width: 768px){
+        margin-top: 62px;
+        margin-bottom: 50px;
+    }
 }
