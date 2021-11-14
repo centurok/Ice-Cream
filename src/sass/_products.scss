@@ -1,72 +1,72 @@
-.products{
+.products {
     padding-top: 121px;
     padding-bottom: 98px;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         padding-top: 122px;
         padding-bottom: 112px;
     }
-        @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
         padding-top: 127px;
         padding-bottom: 119px;
     }
 }
 
-.products__container{
+.products__container {
     align-items: center;
     text-align: center
 }
 
-.product__container-pretitle{
+.product__container-pretitle {
     @include font ('Titan One', 18px, 400, 1.17, null, $fifth);
     text-align: center;
-        @media screen and (max-width: 767px){
-         margin-bottom: 15px;
-        } 
-         @media screen and (min-width: 768px){
-               font-size: 26px;
-            line-height: calc(30 / 26);
-         }
-         @media screen and (min-width: 1200px){
-            font-size: 30px;
-            line-height: calc(34 / 30);
-         }
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: calc(30 / 26);
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: calc(34 / 30);
+    }
 }
 
-.products__container-title{
+.products__container-title {
     @include font ('Titan One', 34px, 400, 1.15, null, $second);
     text-align: center;
-    @media screen and (max-width: 767px){
-         margin-bottom: 144px;
-        }
-    @media screen and (min-width: 768px){
-               font-size: 48px;
-            line-height: calc(55 / 48);
+    @media screen and (max-width: 767px) {
+        margin-bottom: 144px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: calc(55 / 48);
         margin-bottom: 150px;
     }
-        @media screen and (min-width: 1200px){
-            font-size: 58px;
-            line-height: calc(66 / 58);
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: calc(66 / 58);
         margin-bottom: 259px;
-    }     
+    }
 }
 
-.products-list{
+.products-list {
     display: block;
     justify-content: center;
-       @media screen and (min-width: 768px) and (max-width: 1199px){
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-left: -20px;
     }
-        @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
         display: flex;
         flex-wrap: wrap;
         margin-left: -30px;
     }
 }
 
-.products-list__item{
+.products-list__item {
     position: relative;
     min-width: 280px;
     width: 100%;
@@ -77,24 +77,24 @@
     // padding-left: 40px;
     justify-content: center;
     // flex-grow: 1;
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-bottom: 130px;
-        }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         flex-basis: calc(100% / 3 - 20px);
         max-width: 220px;
         min-height: 485px;
         margin-left: 20px;
-     }
-        @media screen and (min-width: 1200px){
+    }
+    @media screen and (min-width: 1200px) {
         flex-basis: calc(100% / 3 - 30px);
         max-width: 330px;
         margin-left: 30px;
         min-height: 525px;
-     }
+    }
 }
 
-.products-list__item::before{
+.products-list__item::before {
     display: block;
     position: absolute;
     content: "";
@@ -107,75 +107,75 @@
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: -50%;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
     background-color: transparent;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         min-width: 220px;
-        min-height: 224px;   
+        min-height: 224px;
         background-position-x: 50%;
         background-position-y: -50%;
-        transform: translate(0%,-50%);
+        transform: translate(0%, -50%);
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
         min-width: 335px;
-        min-height: 335px;   
+        min-height: 335px;
         background-position-x: 50%;
         background-position-y: -50%;
-        transform: translate(0%,-65%);
+        transform: translate(0%, -65%);
     }
 }
 
-.products-list__ice-cream::before{
-background-image: url(../images/products/ice-cream-desc-1x.png);
+.products-list__ice-cream::before {
+    background-image: url(../images/products/ice-cream-desc-1x.png);
 }
 
-.products-list__ice-coffee::before{
+.products-list__ice-coffee::before {
     background-image: url(../images/products/ice-coffee-desc-1x.png);
 }
 
-.products-list__milkshake::before{
+.products-list__milkshake::before {
     background-image: url(../images/products/milkshake-desc-1x.png);
 }
 
-.products-list__item:nth-child(1){
+.products-list__item:nth-child(1) {
     background-color: #ffb8ca;
 }
 
-.products-list__item:nth-child(2){
+.products-list__item:nth-child(2) {
     background-color: #f0d1a5;
 }
 
-.products-list__item:nth-child(3){
+.products-list__item:nth-child(3) {
     background-color: #c2e297;
 }
 
-.products-list__container-title{
+.products-list__container-title {
     @include font ('Titan One', 20px, 400, 1.15, null, $first);
     text-transform: uppercase;
     letter-spacing: 0.04em;
     margin-bottom: 30px;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         margin-bottom: 30px;
     }
-        @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
         margin-bottom: 32px;
     }
 }
 
-.products-list__container-text{
+.products-list__container-text {
     @include font ('DM Sans', 14px, 700, 1.52, null, $first);
     margin-top: 30px;
     height: 124px;
     overflow-y: scroll;
-        @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         margin-top: 30px;
     }
-        @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
         margin-top: 32px;
     }
 }
 
-.products-list__container{
+.products-list__container {
     // display: flex;
     position: absolute;
     // flex-direction: column;
@@ -184,13 +184,13 @@ background-image: url(../images/products/ice-cream-desc-1x.png);
     padding-left: 40px;
     padding-right: 40px;
     width: 100%;
-    @media screen and (min-width: 768px){
-          padding-top: 152px;
-          padding-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        padding-top: 152px;
+        padding-bottom: 40px;
     }
-    @media screen and (min-width: 1200px){
-          padding-top: 163px;
-          padding-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 163px;
+        padding-bottom: 50px;
     }
 }
 
@@ -212,7 +212,6 @@ background-image: url(../images/products/ice-cream-desc-1x.png);
     border-radius: 5px;
     font-size: 0;
     padding: 4px;
-
 }
 
 .three-dots:after {
@@ -222,30 +221,31 @@ background-image: url(../images/products/ice-cream-desc-1x.png);
     content: '';
     background-color: $first;
     border-radius: 5px;
-    font-size: 0;    
+    font-size: 0;
     padding: 4px;
 }
 
-.product-list__container-btn{
-width: 40px;
-height: 40px;
-border-radius: 50%;
-background-color: $first;
-border: none;
-cursor: pointer;
-align-items: center;
-justify-content: center;
-margin-top: 30px;
-    @media screen and (min-width: 480px){
+.product-list__container-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $first;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    @media screen and (min-width: 480px) {
         margin-top: 30px;
     }
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         margin-top: 40px;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
         margin-top: 62px;
     }
 }
-.product-list__container-btn-icon{
+
+.product-list__container-btn-icon {
     color: $second;
 }
