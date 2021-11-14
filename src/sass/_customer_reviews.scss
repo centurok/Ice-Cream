@@ -9,12 +9,19 @@
     clip: rect(0 0 0 0);
 }
 
-.customer-section .wrap {
+.customer-section {
     position: relative;
-    width: 100%;
-    max-width: 1020px;
-    padding: 40px 20px;
+    width: 100vw;
+    padding-bottom: 85px;
     margin: auto;
+    @media screen and (min-width: 768px) {
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
 }
 
 .customer-container .testim-dots {
@@ -28,6 +35,8 @@
     height: 12px;
 }
 
+
+/*
 .customer-container .dots .dot {
     list-style-type: none;
     display: inline-block;
@@ -39,7 +48,7 @@
     cursor: pointer;
     transition: all .5s ease-in-out;
     position: relative;
-}
+}*/
 
 .customer-section .customer__img {
     display: block;
@@ -53,33 +62,48 @@
 }
 
 .сustomer__review {
-    width: 90vw;
-    background-color: #FAFAFA;
+    width: 96vw;
+    background-color: $sixteenth;
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        max-width: 620px;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 926px;
+        margin: 0 auto;
+    }
 }
 
 .customer-section .customer__text {
-    font-family: DM Sans;
+    @include font ('DM Sans', 12px, 500, 1.52, null, $third);
     font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 255%;
     text-align: center;
-    color: #000000;
-    margin: auto;
-    padding: 44px 50px 26px 50px;
+    padding: 45px 60px 25px 60px;
+    @media screen and (min-width: 768px) {
+        @include font ('DM Sans', 14px, 500, 2.16, null, $third);
+        padding: 45px 80px 35px 80px;
+    }
+    @media screen and (min-width: 1280px) {
+        @include font ('DM Sans', 16px, 500, 1.86, null, $third);
+        padding: 45px 85px 40px 85px;
+    }
 }
 
 .customer__thumb--text {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 255%;
+    @include font ('DM Sans', 12px, 500, 2.55, null, $third);
     text-align: center;
-    color: #000000;
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+        @include font ('DM Sans', 16px, 500, 1.86, null, $third);
+        margin-bottom: 35px;
+    }
+    @media screen and (min-width: 1280px) {
+        @include font ('DM Sans', 20px, 500, 1.86, null, $third);
+        margin-bottom: 35px;
+    }
 }
 
 .сustomer__dots {
@@ -97,8 +121,58 @@
 }
 
 .сustomer__dots--svg {
-    fill: #D9D9D9;
+    fill: $eleventh;
     &.active {
-        fill: #D31342;
+        fill: $fourteenth;
     }
+}
+
+.customer-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+        margin-top: 24px;
+        margin-bottom: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.costomer-three--dots {
+    position: relative;
+    background-color: $seventh;
+    border-radius: 50%;
+    font-size: 0;
+    margin: 0px;
+    padding: 2px;
+}
+
+.costomer-three--dots:before {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    content: '';
+    background-color: $seventh;
+    border-radius: 50%;
+    font-size: 0;
+    padding: 2px;
+}
+
+.costomer-three--dots:after {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    content: '';
+    background-color: $seventh;
+    border-radius: 50%;
+    font-size: 0;
+    padding: 2px;
 }
