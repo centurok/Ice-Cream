@@ -19,7 +19,7 @@
             transform: scale(2) ;
         }
     }
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 300px) {
         padding: 15px;
         overflow-y: scroll;
     }
@@ -238,14 +238,13 @@
     cursor: pointer;
     padding: 10px 55px;
     min-width: 200px;
-    font-family: inherit;    
-    font-style: inherit;
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
-    color: $third;
+    color: $first;
     background-color: $second;
     border-radius: 4px;
     margin: 0 auto;
