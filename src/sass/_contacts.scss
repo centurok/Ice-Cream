@@ -23,18 +23,22 @@ ul {
   }
 }
 .section__contacts {
+  padding-top: 85px;
+  padding-bottom: 0;
+  background-clip: content-box;
   background-color: $thirteenth;
 }
 .container__contacts {
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 113px;
+  padding-bottom: 28px;
+  transform: translateY(-85px);
 }
+
 .contact__list {
   display: block;
   padding-left: 0;
   list-style: none;
-  background-color: $thirteenth;
 }
 .contact__card {
   margin-bottom: 20px;
@@ -135,11 +139,15 @@ ul {
 }
 .button__items {
   margin-bottom: 10px;
+  &:nth-child(2) {
+    margin-bottom: 0;
+  }
 }
 .button__item {
+  padding: 0;
   min-width: 162px;
   min-height: 44px;
-  background: $fifteenth;
+  background-color: $fifteenth;
   border-radius: 22px;
   border: none;
   cursor: pointer;
@@ -150,9 +158,20 @@ ul {
   line-height: 21px;
   text-align: center;
   color: $first;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $seventh;
+  }
   &--second {
     color: $second;
-    background: $first;
+    background-color: $first;
+    &:hover,
+    &:focus {
+      background: $seventeenth;
+    }
   }
 }
 .button__icon {
