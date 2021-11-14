@@ -1,57 +1,93 @@
 .footer-section {
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 25px;
-
   background-color: $thirteenth;
   width: 100vw;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 91px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 98px;
+  }
 }
+
 .footer__container {
   padding-left: 20px;
   padding-right: 20px;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
-
-}
-.footer-container {
-  width: 100vw;
-  background-color: $thirteenth;
-
   @media screen and (min-width: 480px) {
     width: 480px;
   }
   @media screen and (min-width: 768px) {
+    padding-left: 36px;
+    padding-right: 36px;
     width: 768px;
+    display: flex;
+    justify-content: space-between;
   }
   @media screen and (min-width: 1280px) {
+    padding-left: 115px;
+    padding-right: 115px;
+    align-items: center;
     width: 1280px;
   }
-
 }
 
 .footer__textwrap {
   padding: 0 0 43px 0;
   margin: 0 auto 0 0;
   width: 234px;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    padding-top: 7px;
+    padding-bottom: 0px;
+    margin: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 477px;
+    padding: 0;
+  }
 }
 .footer__subtext {
   font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $fifth;
   list-style: none;
   margin-bottom: 17px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.14;
+    margin-bottom: 15px;
+  }
 }
+
 .footer__text {
   font-family: 'Titan One', cursive;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $second;
   list-style: none;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
 .footer-list {
   margin: 0;
@@ -66,6 +102,12 @@
 }
 .footer__item:not(:first-child) {
   margin-left: 28px;
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 25px;
+  }
 }
 .footer__link {
   height: 100%;
@@ -83,17 +125,17 @@
 .footer__icon1 {
   width: 18.82px;
   height: 18.82px;
-  fill: #ffffff;
+  fill: $first;
 }
 .footer__icon2 {
   width: 19.3px;
   height: 14.93px;
-  fill: #ffffff;
+  fill: $first;
 }
 .footer__icon3 {
   width: 8.8px;
   height: 19.2px;
-  fill: #ffffff;
+  fill: $first;
 }
 
 .footer__item {
@@ -111,6 +153,15 @@
   color: $third;
   padding-bottom: 43px;
   margin: 0;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 .footer__contact__link {
   font-style: normal;
@@ -120,20 +171,43 @@
   color: $second;
   letter-spacing: 0.04em;
   text-decoration: none;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    letter-spacing: 0.01em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
-/*.footer__border {
+
+.footer-rights-section {
+  padding-top: 22px;
+  padding-bottom: 25px;
+  background-color: $thirteenth;
   width: 100vw;
-  border-bottom: 1px solid $fourth;
-}*/
+  border-top: 1px solid $fourth;
+  @media screen and (min-width: 768px) {
+    padding-top: 29px;
+    padding-bottom: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 9px;
+    padding-bottom: 0;
+  }
+}
+
 .footer__rights {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
   color: $sixth;
-  letter-spacing: 0.02em;  
-  padding-top: 22px;
+  letter-spacing: 0.02em;
   width: 150px;
   margin: 0 auto;
-
+  @media screen and (min-width: 768px) {
+    line-height: 1.86;
+    width: 276px;
+  }
 }
