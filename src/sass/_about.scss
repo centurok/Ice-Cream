@@ -44,8 +44,8 @@ margin-bottom: 45px;
    }
 }
 .how-its-made-text{
-    color: #907E82;
-    font-family: DM Sans;
+color: #907E82;
+font-family: DM Sans;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -55,16 +55,12 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 
-max-width: 1600px;
 margin-bottom: 17px;
-@media screen and(min-width: 320px) {
-    width:220px;
-   }
 }
 .how-its-made-tradition{
-    margin: 0 auto;
-    color: #FFA5BA;
-    font-family: Titan One;
+margin: 0 auto;
+color: #FFA5BA;
+font-family: Titan One;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -102,4 +98,9 @@ cursor: pointer;
        width:280px;
        margin:0 auto;
       }
+}
+
+.how-its-made-text-wrapper{
+    padding-left: 50px;
+    padding-right: 50px;
 }
