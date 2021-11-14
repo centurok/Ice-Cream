@@ -194,7 +194,7 @@ background-image: url(../images/products/ice-cream-desc-1x.png);
     }
 }
 
-span {
+.three-dots {
     position: relative;
     background-color: $first;
     border-radius: 5px;
@@ -203,7 +203,7 @@ span {
     padding: 4px;
 }
 
-span:before {
+.three-dots:before {
     position: absolute;
     left: -12px;
     top: 0;
@@ -215,7 +215,7 @@ span:before {
 
 }
 
-span:after {
+.three-dots:after {
     position: absolute;
     left: 12px;
     top: 0;
