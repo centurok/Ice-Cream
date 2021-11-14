@@ -70,7 +70,8 @@
     position: relative;
     min-width: 280px;
     width: 100%;
-    height: 485px;
+    min-height: 485px;
+    height: 100%;
     border-radius: 24px;
     // padding-right: 40px;
     // padding-left: 40px;
@@ -82,12 +83,14 @@
     @media screen and (min-width: 768px) and (max-width: 1199px){
         flex-basis: calc(100% / 3 - 20px);
         max-width: 220px;
+        min-height: 485px;
         margin-left: 20px;
      }
         @media screen and (min-width: 1200px){
         flex-basis: calc(100% / 3 - 30px);
         max-width: 330px;
         margin-left: 30px;
+        min-height: 525px;
      }
 }
 
@@ -122,10 +125,6 @@
     }
 }
 
-.products-list__ice-cream{
-    // margin-bottom: 21px;
-}
-
 .products-list__ice-cream::before{
 background-image: url(../images/products/ice-cream-desc-1x.png);
 }
@@ -137,10 +136,6 @@ background-image: url(../images/products/ice-cream-desc-1x.png);
 .products-list__milkshake::before{
     background-image: url(../images/products/milkshake-desc-1x.png);
 }
-
-// .products-list__container{
-//     width: 100%;
-// }
 
 .products-list__item:nth-child(1){
     background-color: #ffb8ca;
@@ -158,17 +153,26 @@ background-image: url(../images/products/ice-cream-desc-1x.png);
     @include font ('Titan One', 20px, 400, 1.15, null, $first);
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    margin-bottom: 66px;
+    margin-bottom: 30px;
     @media screen and (min-width: 768px){
-        margin-bottom: 66px;
+        margin-bottom: 30px;
     }
         @media screen and (min-width: 1200px){
-        margin-bottom: 70px;
+        margin-bottom: 32px;
     }
 }
 
 .products-list__container-text{
     @include font ('DM Sans', 14px, 700, 1.52, null, $first);
+    margin-top: 30px;
+    height: 124px;
+    overflow-y: scroll;
+        @media screen and (min-width: 768px){
+        margin-top: 30px;
+    }
+        @media screen and (min-width: 1200px){
+        margin-top: 32px;
+    }
 }
 
 .products-list__container{
@@ -182,9 +186,59 @@ background-image: url(../images/products/ice-cream-desc-1x.png);
     width: 100%;
     @media screen and (min-width: 768px){
           padding-top: 152px;
+          padding-bottom: 40px;
     }
     @media screen and (min-width: 1200px){
           padding-top: 163px;
+          padding-bottom: 50px;
     }
+}
 
+span {
+    position: relative;
+    background-color: $first;
+    border-radius: 5px;
+    font-size: 0;
+    margin-left: 0px;
+    padding: 4px;
+}
+
+span:before {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    content: '';
+    background-color: $first;
+    border-radius: 5px;
+    font-size: 0;
+    padding: 4px;
+
+}
+
+span:after {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    content: '';
+    background-color: $first;
+    border-radius: 5px;
+    font-size: 0;    
+    padding: 4px;
+}
+
+.product-list__container-btn-icon{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: $first;
+margin-top: 30px;
+    @media screen and (min-width: 480px){
+        margin-top: 30px;
+    }
+    @media screen and (min-width: 768px){
+        margin-top: 40px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-top: 62px;
+    }
 }
