@@ -226,11 +226,15 @@ background-image: url(../images/products/ice-cream-desc-1x.png);
     padding: 4px;
 }
 
-.product-list__container-btn-icon{
+.product-list__container-btn{
 width: 40px;
 height: 40px;
 border-radius: 50%;
 background-color: $first;
+border: none;
+cursor: pointer;
+align-items: center;
+justify-content: center;
 margin-top: 30px;
     @media screen and (min-width: 480px){
         margin-top: 30px;
@@ -241,4 +245,7 @@ margin-top: 30px;
     @media screen and (min-width: 1200px){
         margin-top: 62px;
     }
+}
+.product-list__container-btn-icon{
+    color: $second;
 }
