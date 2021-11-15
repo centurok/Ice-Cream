@@ -1,27 +1,56 @@
-<section class="about" id="about">
+<section class="about about-section" id="about">
 <div class="about-container container">
 <p class="how-its-made-tradition">tradition and love</p>
 <h2 class="how-its-made-title">how it’s made?</h2>
-<picture>
-    <img class="how-its-made-cow-picture" src="./images/about/cow-mob-1x.png" alt="A happy cow with milk">
- </picture> 
-    <div class="how-its-made-text-wrapper">
-        <article class="how-its-made-article">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-        </article>
-        <p  class="how-its-made-text">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-            Aliquam erat volutpat. Aenean accumsan.
-        </p>
-        <p  class="how-its-made-text">
-            Aliquam erat volutpat. Aenean accumsan.
-        </p>
+ <div class="how-its-made-wrapper">
+     <div class="how-its-made-picture-wrapper">
+    <picture class="how-its-made-cow-picture">
+        <source
+                    srcset="
+                        images/about/cow-desc-1x.png   1x,
+                        images/about/cow-desc-2x.png  2x
+                    "
+                    media="(min-width: 1280px)"
+                    />
+                    <source
+                    srcset="
+                    images/about/cow-tab-1x.png   1x,
+                    images/about/cow-tab-2x.png   2x
+                    "
+                    media="(min-width: 773px)"
+                    />
+                    <source
+                    srcset="
+                    images/about/cow-mob-1x.png    1x,
+                    images/about/cow-mob-1x.png  2x
+                    "
+                    media="(min-width: 320px)"
+                    />
+                    <img
+                    src="images/about/cow-desc-1x.png"
+                    class="how-its-made-cow-picture"
+                    alt="A happy cow with milk"
+                    />
+    </picture> 
+</div>
+        <div class="how-its-made-text-wrapper">
+            <article class="how-its-made-article">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+            </article>
+            <p  class="how-its-made-text">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                Aliquam erat volutpat. Aenean accumsan.
+            </p>
+            <p  class="how-its-made-text">
+                Aliquam erat volutpat. Aenean accumsan.
+            </p>
 
-        <button class="button read-more-button" type="button">Read more
-        <svg class="read-more-button-icon" width="10" height="8">  
-            <use  href="./images/contacts/symbol-defs1.svg#icon-vector-button"> </use> 
-        </svg>
-        </button>
-    </div>
+            <button class="button read-more-button" type="button">Read more
+            <svg class="read-more-button-icon" width="10" height="10">  
+                <use  href="./images/contacts/symbol-defs1.svg#icon-vector-button"> </use> 
+            </svg>
+            </button>
+        </div>
+</div>
 </div>
 </section>
