@@ -1,16 +1,71 @@
 
 .about{
 background-color: #FFF5F6;
+background-image: url(../images/about/bg-milk-desc-1x.png);
+background-repeat: no-repeat;
+background-position: center;
 
+@media screen and(min-width: 320px) {
+    flex-direction: column;
+   }
+   @media screen and(min-width: 773px) {
+    background-image: none;
+   }
+    @media screen and(min-width: 1280px) {
+        width: 1280px;
+        height: 534px;
+    }
 }
 .about-container{
-
+    background-color: #FFF5F6;
+    padding-left: 50px;
+    padding-right: 50px;
 padding-bottom: 20px;
 padding-top: 125px;
+display: flex;
+flex-direction: column;
+@media screen and(min-width: 773px) {
+   }
+    @media screen and(min-width: 1280px) {
+        padding-top: 40px;
+    }
 
 }
 
+.how-its-made-wrapper{
+    display: flex;
+    @media screen and(min-width: 320px) {
+        flex-direction: column;
+       }
+       @media screen and(min-width: 773px) {
+        flex-direction: row;
+        justify-content: space-between;
+        }
+        @media screen and(min-width: 1280px) {
+            // flex-direction: row;
+            justify-content: center;
+        }
+}
+
+.how-its-made-picture-wrapper{
+    width:100%;
+    @media screen and(min-width: 320px) {
+       width: 280px;
+      }
+      @media screen and(min-width: 773px) {
+        width: 340px;
+        width: 340px;
+        margin-right: 17px;
+       }
+       @media screen and(min-width: 1280px) {
+        width: 516px;
+        margin-right: 74px;
+       }
+}
+
+
 .how-its-made-title{
+    width: 100%;
     margin: 0 auto;
 color:  #D41443;
  font-family:  Titan One;
@@ -21,10 +76,26 @@ text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 margin-bottom: 26px;
+width: 100%;
 @media screen and(min-width: 320px) {
     width:200px;
     text-align: center;
 
+         @media screen and(min-width: 773px) {
+         font-size: 48px;
+         line-height: calc(55/48);
+         width: 432px;
+         letter-spacing: 0.04em;
+         margin-bottom: 106px;
+            }
+        @media screen and(min-width: 1280px) {
+            font-size: 58px;
+            letter-spacing: 0.06em;
+            width: 534px;
+            line-height: calc(66/58);
+            letter-spacing: 0.04em;
+            margin-bottom: 106px;
+        }
    }
 
 }
@@ -40,8 +111,18 @@ margin-top: 46px;
 margin-bottom: 45px;
 @media screen and(min-width: 320px) {
     width:220px;
-
    }
+     @media screen and(min-width: 773px) {
+     font-size: 14px;
+     line-height: calc(25/14);
+     width: 340px;
+        }
+    @media screen and(min-width: 1280px) {
+        width: 463px;
+        font-size: 16px;
+        line-height: calc(28/16);
+        letter-spacing: 0.04em;
+    }
 }
 .how-its-made-text{
 color: #907E82;
@@ -50,12 +131,23 @@ font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: calc(19/12);
-background-image: url(../images/about/bg-milk-mob-1x.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
 
 margin-bottom: 17px;
+@media screen and(min-width: 320px) {
+    width:220px;
+   }
+    @media screen and(min-width: 773px) {
+        font-size: 14px;
+        line-height: calc(25/14);
+        width: 340px;
+        letter-spacing: 0.04em;
+      }
+    @media screen and(min-width: 1280px) {
+        width: 463px;
+        font-size: 16px;
+        line-height: calc(28/16);
+        letter-spacing: 0.04em;
+    }
 }
 .how-its-made-tradition{
 margin: 0 auto;
@@ -68,6 +160,20 @@ line-height: calc(21/18);
 text-align: center;
 text-transform: uppercase;
 margin-bottom: 15px;
+width: 100%;
+@media screen and(min-width: 320px) {
+    width: 200px;
+   }
+    @media screen and(min-width: 773px) {
+        font-size: 26px;
+        line-height: calc(30/26);
+        width: 285px;
+      }
+    @media screen and(min-width: 1280px) {
+        width: 463px;
+        font-size: 30px;
+        line-height: calc(34/30);
+    }
 }
 
 .read-more-button{
@@ -76,7 +182,7 @@ align-items:center;
 justify-content:center;
 background-color: #FFFFFF;
 border-radius: 22px;
-width: 176px;
+width: 100%;
 height: 44px;
 font-family: DM Sans;
 font-style: normal;
@@ -87,20 +193,34 @@ text-align: center;
 color: #D41443;
 border: none;
 cursor: pointer;
+@media screen and(min-width: 320px) {
+    width: 176px;
+   }
 }
 
 .read-more-button-icon{
     margin-left: 14px;
 }
 .how-its-made-cow-picture{
-    width:100%;
+    width: 100%;
     @media screen and(min-width: 320px) {
-       width:280px;
-       margin:0 auto;
+       width: 280px;
       }
+      @media screen and(min-width: 773px) {
+        width: 100%;
+       }
+       @media screen and(min-width: 1280px) {
+        width: 516px;
+       }
 }
 
 .how-its-made-text-wrapper{
-    padding-left: 50px;
-    padding-right: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
+
+// .how-its-made-text-wrapper{
+//     // padding-left: 50px;
+//     // padding-right: 50px;
+// }
