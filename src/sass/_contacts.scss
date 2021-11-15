@@ -23,28 +23,48 @@ ul {
   }
 }
 .section__contacts {
+  margin: 0 auto;
   padding-top: 85px;
-  padding-bottom: 0;
   background-clip: content-box;
   background-color: $thirteenth;
 }
 .container__contacts {
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 28px;
+
   transform: translateY(-85px);
+  @media screen and (min-width: 768px) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
 
 .contact__list {
   display: block;
   padding-left: 0;
   list-style: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    padding: 0;
+    justify-content: center;
+  }
 }
 .contact__card {
   margin-bottom: 20px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   background-color: $first;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 20px;
+    flex-basis: calc((100% - 60) / 3);
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+  }
 }
 .contact__address {
   display: block;
@@ -102,6 +122,7 @@ ul {
   color: $sixth;
 }
 .card__schedule {
+  list-style: none;
   padding: 25px 0;
   border-bottom: 1px solid $fourth;
 }
@@ -117,6 +138,7 @@ ul {
   color: $fifth;
 }
 .card__contacts {
+  list-style: none;
   display: flex;
   flex-direction: column;
   padding-top: 25px;
@@ -136,11 +158,23 @@ ul {
   display: block;
   padding-left: 0;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 86px;
+  }
 }
 .button__items {
   margin-bottom: 10px;
   &:nth-child(2) {
     margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 15px;
+    &:nth-child(2) {
+      margin-right: 0;
+    }
   }
 }
 .button__item {
@@ -171,6 +205,12 @@ ul {
     &:hover,
     &:focus {
       background: $seventeenth;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 198px;
+    &--second {
+      min-width: 180px;
     }
   }
 }
