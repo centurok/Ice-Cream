@@ -259,12 +259,27 @@
         display: inline-block;
         vertical-align: top;
         margin: 0 8px;
+        border: 50%;
+        & {
+            button{
+                border-radius: 50%;
+                font-size: 0;
+                width: 12px;
+                height: 12px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background-color: $eleventh;
+            }
+        }
         &.slick-active {
-            a {
-                background: transparent;
-                &:before {
-                    opacity: 1;
-                }
+            button {
+                border-radius: 0;
+                background-color: transparent;
+                background-image: url(../images/testimonials/home1.svg);
+                background-size: contain;
+                width: 13px;
+                
             }
         }
         a {
