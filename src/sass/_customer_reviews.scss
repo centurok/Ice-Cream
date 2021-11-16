@@ -1,234 +1,35 @@
-    .hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        overflow: hidden;
-        border: 0;
-        clip: rect(0 0 0 0);
-    }
-    
-    .customer-section {
-        display: block;
-        text-align: center;
-        width: 100vw;
-        padding-top: 85px;
-        padding-bottom: 85px;
-        margin: auto;
-        @media screen and (min-width: 768px) {
-            padding-left: 74px;
-            padding-right: 74px;
-        }
-        @media screen and (min-width: 1280px) {
-            padding-left: 110px;
-            padding-right: 110px;
-        }
-    }
-    
-    .customer-container .testim-dots {
-        text-align: center;
-        position: absolute;
-        width: 100%;
-        bottom: 60px;
-        left: 0;
-        display: block;
-        z-index: 3333;
-        height: 12px;
-    }
-    /*
-.customer-container .dots .dot {
-    list-style-type: none;
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: 1px solid #eee;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-    position: relative;
-}*/
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
 
-    
-    .customer-section .customer__img {
-        display: block;
-        width: 100px;
-        height: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        border-radius: 50%;
-        overflow: hidden;
-    }
-    
-    .сustomer__review {
-        width: 80%;
-        background-color: $sixteenth;
-        margin-left: 20pt;
-        margin-right: 20pt;
-        margin-bottom: 30px;
-        @media screen and (min-width: 768px) {
-            max-width: 620px;
-        }
-        @media screen and (min-width: 1280px) {
-            max-width: 926px;
-            margin: 0 auto;
-        }
-    }
-    
-    .сustomer__review--grad {
-        position: relative; // background-position: center bottom 1px;
-        // background-size: 100% 3px;
-        // background-image: repeating-linear-gradient(to bottom, transparent 0 30px, #e1e1e1 31px);
-        background-repeat: repeat;
-        background-position: 5px;
-        background-image: repeating-linear-gradient(to top, transparent 0 30px, #e1e1e1 31px);
-        text-align: center;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    
-    .сustomer__review--grad::before {
-        display: block;
-        position: absolute;
-        content: "";
-        width: 54px;
-        height: 40px;
-        background-image: url(../images/testimonials/kavsvg.svg);
-        margin: auto;
-        right: 0;
-        left: 0;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position-x: 25%;
-        background-position-y: -25%;
-        transform: translate(-100%, -25%);
-        background-color: transparent;
-        @media screen and (min-width: 768px) {
-            min-width: 54px;
-            min-height: 40px;
-            background-position-x: 25%;
-            background-position-y: -25%;
-            transform: translate(-100%, -25%);
-        }
-        @media screen and (min-width: 1200px) {
-            min-width: 54px;
-            min-height: 40px;
-            background-position-x: 25%;
-            background-position-y: -25%;
-            transform: translate(-100%, -25%);
-        }
-    }
-    
-    .customer-text--position {
-        position: relative;
-        z-index: 1000;
-    }
-    
-    .сustomer__review .customer__text {
-        @include font ('DM Sans', 12px, 500, 2.58, null, $third);
-        font-style: normal;
-        text-align: center;
-        padding: 0 auto;
-        @media screen and (min-width: 768px) {
-            @include font ('DM Sans', 14px, 500, 2.16, null, $third);
-            padding: 45px 80px 35px 80px;
-        }
-        @media screen and (min-width: 1280px) {
-            @include font ('DM Sans', 16px, 500, 1.86, null, $third);
-            padding: 45px 85px 40px 85px;
-        }
-    }
-    
-    .customer__thumb--text {
-        @include font ('DM Sans', 14px, 500, 2.55, null, $third);
-        text-align: center;
-        width: 100%;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        @media screen and (min-width: 768px) {
-            @include font ('DM Sans', 16px, 500, 1.86, null, $third);
-            margin-bottom: 35px;
-        }
-        @media screen and (min-width: 1280px) {
-            @include font ('DM Sans', 20px, 500, 1.86, null, $third);
-            margin-bottom: 35px;
-        }
-    }
-    
-    .сustomer__dots {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .сustomer__dots .dot {
-        list-style-type: none;
-        margin-right: 18px;
-        &:nth-child(3) {
-            margin-right: 0;
-        }
-    }
-    
-    .сustomer__dots--svg {
-        fill: $eleventh;
-        &.active {
-            fill: $fourteenth;
-        }
-    }
-    
-    .customer-marker {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 18px;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        @media screen and (min-width: 768px) {
-            margin-top: 24px;
-            margin-bottom: 14px;
-        }
-        @media screen and (min-width: 1280px) {
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-    }
-    
-    .customer-three--dots {
-        position: relative;
-        background-color: $seventh;
-        border-radius: 50%;
-        font-size: 0;
-        margin: 0px;
-        padding: 2px;
-    }
-    
-    .customer-three--dots:before {
-        position: absolute;
-        left: -12px;
-        top: 0;
-        content: '';
-        background-color: $seventh;
-        border-radius: 50%;
-        font-size: 0;
-        padding: 2px;
-    }
-    
-    .customer-three--dots:after {
-        position: absolute;
-        left: 12px;
-        top: 0;
-        content: '';
-        background-color: $seventh;
-        border-radius: 50%;
-        font-size: 0;
-        padding: 2px;
-    }
 
+/*_______________________секция отзывы_______________*/
+
+.customer-section {
+    display: block;
+    text-align: center;
+    width: 100vw;
+    padding-bottom: 85px;
+    margin: auto;
+    @media screen and (min-width: 768px) {
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+}
+
+
+/*____________________картинка_________________*/
 
 .customer-section .customer__img {
     display: block;
@@ -241,24 +42,94 @@
     overflow: hidden;
 }
 
+
+/*___________________серый фон___________*/
+
 .сustomer__review {
-    width: 96vw;
+    width: 80%;
     background-color: $sixteenth;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     @media screen and (min-width: 768px) {
         max-width: 620px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     @media screen and (min-width: 1280px) {
         max-width: 926px;
         margin: 0 auto;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
-.customer-section .customer__text {
-    @include font ('DM Sans', 12px, 500, 1.52, null, $third);
+
+/*____________________________кавычки перед текстом______________*/
+
+.customer__text::before {
+    z-index: -1;
+    top: 10px;
+    left: 4px;
+    display: block;
+    position: absolute;
+    content: close-quote;
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/testimonials/kavsvg.svg);
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 25%;
+    background-position-y: -25%;
+    transform: translate(-35%, -50%);
+    background-color: transparent;
+    @media screen and (min-width: 768px) {
+        max-width: 54px;
+        max-height: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 54px;
+        max-height: 40px;
+    }
+}
+
+
+/*______________________текст отзыва______________*/
+
+.сustomer__review .customer__text {
+    width: 100%;
+    font-size: 12px;
+    line-height: 2.5833333333;
+    font-weight: 500;
+    letter-spacing: .03em;
+    text-align: center;
+    padding-left: 7px;
+    position: relative;
+    z-index: 1;
+    padding-right: 16px;
+    background-image: repeating-linear-gradient(transparent, transparent 28px, #e1e1e1 0, #e1e1e1 29px, transparent 0, transparent 59px, #e1e1e1 0, #e1e1e1 60px);
+    @media screen and (min-width: 768px) {
+        @include font ('DM Sans', 14px, 500, 2.16, null, $third);
+        background-image: repeating-linear-gradient(transparent, transparent 30px, #e1e1e1 0, #e1e1e1 31px, transparent 0, transparent 58px, #e1e1e1 0, #e1e1e1 60px);
+        // padding: 45px 0px 35px 0px;
+    }
+    @media screen and (min-width: 1280px) {
+        @include font ('DM Sans', 16px, 500, 1.86, null, $third);
+        background-image: repeating-linear-gradient(transparent, transparent 29px, #e1e1e1 0, #e1e1e1 30px, transparent 0, transparent 58px, #e1e1e1 0, #e1e1e1 61px);
+        // padding: 45px 0px 40px 0px;
+    }
+}
+
+
+/* position: relative;
+    z-index: 1000;
+    @include font ('DM Sans', 12px, 500, 2.58, null, $third);
     font-style: normal;
     text-align: center;
-    padding: 45px 60px 25px 60px;
+    padding: 45px 10px 25px 10px;
+    background-position-y: 10px;
+    background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
     @media screen and (min-width: 768px) {
         @include font ('DM Sans', 14px, 500, 2.16, null, $third);
         padding: 45px 80px 35px 80px;
@@ -266,11 +137,26 @@
     @media screen and (min-width: 1280px) {
         @include font ('DM Sans', 16px, 500, 1.86, null, $third);
         padding: 45px 85px 40px 85px;
-    }
+    }*/
+
+
+/*_____________________градиент_________________*/
+
+.сustomer__review--grad {
+    background-repeat: repeat;
+    background-position: 10px;
+    // background-image: repeating-linear-gradient(to top, transparent 0 30px, #e1e1e1 31px);
+    //background: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
+
+/*________________________________NAME___________________*/
+
 .customer__thumb--text {
-    @include font ('DM Sans', 12px, 500, 2.55, null, $third);
+    @include font ('DM Sans', 14px, 500, 2.55, null, $third);
     text-align: center;
     width: 100%;
     margin-bottom: 30px;
@@ -286,20 +172,20 @@
     }
 }
 
+
+/*_____________________________пагинация, иконки _____________*/
+
 .сustomer__dots {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.сustomer__dots  {
-    & .dot:not(:last-child) {
-        margin-right: 18px;
-    }
-    
-    
+.сustomer__dots .dot {
+    list-style-type: none;
+    margin-right: 18px;
     &:nth-child(3) {
-        margin-bottom: 0;
+        margin-right: 0;
     }
 }
 
@@ -309,6 +195,9 @@
         fill: $fourteenth;
     }
 }
+
+
+/*_____________________три точки______________*/
 
 .customer-marker {
     display: flex;
@@ -329,7 +218,7 @@
     }
 }
 
-.costomer-three--dots {
+.customer-three--dots {
     position: relative;
     background-color: $seventh;
     border-radius: 50%;
@@ -338,7 +227,7 @@
     padding: 2px;
 }
 
-.costomer-three--dots:before {
+.customer-three--dots:before {
     position: absolute;
     left: -12px;
     top: 0;
@@ -349,7 +238,7 @@
     padding: 2px;
 }
 
-.costomer-three--dots:after {
+.customer-three--dots:after {
     position: absolute;
     left: 12px;
     top: 0;
@@ -359,4 +248,3 @@
     font-size: 0;
     padding: 2px;
 }
-
