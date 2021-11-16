@@ -1,9 +1,10 @@
 .footer-section {
-  padding-top: 0px;
-  padding-bottom: 25px;
+  padding-top: 28px;
+  padding-bottom: 43px;
   background-color: $thirteenth;
   width: 100vw;
   @media screen and (min-width: 768px) {
+    padding-top: 80px;
     padding-bottom: 91px;
   }
   @media screen and (min-width: 1280px) {
@@ -35,8 +36,7 @@
 }
 
 .footer__textwrap {
-  padding: 0 0 43px 0;
-  margin: 0 auto 0 0;
+  margin: 0 auto 43px 0;
   width: 234px;
   @media screen and (min-width: 768px) {
     width: 340px;
@@ -90,8 +90,7 @@
   }
 }
 .footer-list {
-  margin: 0;
-  padding: 0 0 46px 0;
+  margin: 0 0 46px 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -151,7 +150,7 @@
   text-align: end;
   letter-spacing: 0.02em;
   color: $third;
-  padding-bottom: 43px;
+  //padding-bottom: 43px;
   margin: 0;
   @media screen and (min-width: 768px) {
     padding-bottom: 0;

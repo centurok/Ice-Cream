@@ -4,42 +4,96 @@
         <h2 class="products__container-title">Products</h2>
         <ul class="products-list list">
             <li class="products-list__item products-list__ice-cream">
-                <div class="products-list__container">
+
+                <div class="products-list__container products-list__card">
                     <h3 class="products-list__container-title">ice cream</h3>
                     <span class="three-dots"></span>
-                   <p class="products-list__container-text">Our ice-cream has 54 so different, delicious and unique flavours that they would all have to be pretty mediocre in order for this brand to rank any lower on our list.</p>
-                    <button class="product-list__container-btn" type="button">
-                                <svg class="product-list__container-btn-icon" width="20" height="15">
-                                    <use href="./images/symbol-defs.svg#arrow"></use>
-                                </svg>
+                    <p class="products-list__container-text">Our ice-cream has 54 so different, delicious and unique
+                        flavours that they would all have to be pretty mediocre in order for this brand to rank any
+                        lower on our list.</p>
+                    <button class="product-list__container-btn
+                        card-toggle js-open-card js-open-ice-cream" aria-expanded="false" aria-controls="card"
+                        data-card="">
+                        <svg class="product-list__container-btn-icon" width="20" height="15">
+                            <use href="./images/symbol-defs.svg#arrow"></use>
+                        </svg>
                     </button>
+
+
+                    <div class="card-container js-card-container" id="card">
+                        <p class="products-list__card-text card-text__ice-cream is-hidden-ice-cream">
+                            <!-- <button type="button" class="card__close-btn 
+                                card-toggle js-close-card-ice-cream" type="button">
+                                <svg class="card__close-icon">
+                                    <use href="./images/symbol-defs.svg#close-icon"></use>
+                                </svg>
+                            </button> -->
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Placeat provident accusantium adipisci dicta facilis sunt quasi deserunt
+                            impedit.
+                        </p>
+                    </div>
                 </div>
             </li>
+
             <li class="products-list__item products-list__ice-coffee">
-                    <div class="products-list__container">
-                            <h3 class="products-list__container-title">ice-coffee</h3>
-                            <span class="three-dots"></span>
-                            <p class="products-list__container-text">Combine strong coffee with sweetened condensed milk, half-and-half, and a touch of vanilla extract and serve over ice!
-                            Really delicious on hot days!Now we're reaching a new standard.</p>
-                            <button class="product-list__container-btn" type="button">
-                                <svg class="product-list__container-btn-icon" width="20" height="15">
-                                    <use href="./images/symbol-defs.svg#arrow"></use>
+
+                <div class="products-list__container products-list__card">
+                    <h3 class="products-list__container-title">ice-coffee</h3>
+                    <span class="three-dots"></span>
+                    <p class="products-list__container-text">Combine strong coffee with sweetened condensed milk,
+                        half-and-half, and a touch of vanilla extract and serve over ice!
+                        Really delicious on hot days!Now we're reaching a new standard.</p>
+                    <button class="product-list__container-btn
+                        card-toggle js-open-card js-open-coffee" aria-expanded="false"
+                        aria-controls="card">
+                        <svg class="product-list__container-btn-icon" width="20" height="15">
+                            <use href="./images/symbol-defs.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="card-container js-card-container">
+                        <p class="products-list__card-text card-text__ice-coffee is-hidden-ice-coffee">
+                            <!-- <button type="button" class="card__close-btn js-close-card-coffee" data-card-close>
+                                <svg class="card__close-icon">
+                                    <use href="./images/symbol-defs.svg#close-icon"></use>
                                 </svg>
-                            </button>
+                            </button> -->
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Placeat provident accusantium adipisci dicta facilis sunt quasi deserunt
+                            impedit.
+                        </p>
                     </div>
+                </div>
             </li>
             <li class="products-list__item products-list__milkshake">
-                    <div class="products-list__container">
-                            <h3 class="products-list__container-title">milkshake</h3>
-                            <span class="three-dots"></span>
-                            <p class="products-list__container-text">The flavors of chocolate and coffee were made to go together. And humans were made to drink milkshakes. We took these
-                            two undeniable truths and created our famous Jamocha Shake. It's a frosty, chocolate-y, coffee-y treat.</p>
-                            <button class="product-list__container-btn" type="button">
-                                <svg class="product-list__container-btn-icon" width="20" height="15">
-                                    <use href="./images/symbol-defs.svg#arrow"></use>
+                <div class="products-list__container products-list__card">
+                    <h3 class="products-list__container-title">milkshake</h3>
+                    <span class="three-dots"></span>
+                    <p class="products-list__container-text">The flavors of chocolate and coffee were made to go
+                        together. And humans were made to drink milkshakes. We took these
+                        two undeniable truths and created our famous Jamocha Shake. It's a frosty, chocolate-y, coffee-y
+                        treat.</p>
+                    <button class="product-list__container-btn
+                    card-toggle js-open-card js-open-milkshake">
+                        <svg class="product-list__container-btn-icon" width="20" height="15">
+                            <use href="./images/symbol-defs.svg#arrow"></use>
+                        </svg>
+                    </button>
+
+                    <div class="card-container js-card-container">
+                        <p class="products-list__card-text card-text__milkshake is-hidden-milkshake">
+                            <!-- <button type="button" class="card__close-btn 
+                                card-toggle js-close-card-milkshake" type="button">
+                                <svg class="card__close-icon">
+                                    <use href="./images/symbol-defs.svg#close-icon"></use>
                                 </svg>
-                            </button>
+                            </button> -->
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Placeat provident accusantium adipisci dicta facilis sunt quasi deserunt
+                            impedit.
+                        </p>
                     </div>
+                </div>
             </li>
         </ul>
     </div>

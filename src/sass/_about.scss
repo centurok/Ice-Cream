@@ -1,45 +1,38 @@
 
-.about-section{
-    background-image: url(../images/about/bg-milk-desc-1x.png);
-    background-repeat: no-repeat;
-    background-position: center; 
-}
-
-
-
 .about{
 background-color: #FFF5F6;
 padding-bottom: 40px;
 padding-top: 125px;
 background-image: url(../images/about/bg-milk-mob-1x.png);
 background-repeat: no-repeat;
-width: 100%; 
-background-size: cover;
-background-position: center ;
-// height :133px;
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: 
-      url(../images/about/bg-milk-mob-1x.png);
+max-width: 1600px;
+background-position: bottom;
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about {
+    background-image: url(../images/about/bg-milk-mob-2x.png);
   }
-@media screen and(min-width: 320px) {
-    flex-direction: column;
-    // background-image: url(../images/about/bg-milk-desc-1x.png);
-    // background-repeat: no-repeat;
-    // background-position: center;   
+}
 
-   }
    @media screen and(min-width: 773px) {
     background-image: none;
     padding-bottom: 66px;
    }
-    @media screen and(min-width: 1280px) {
-        background-image: url(../images/about/bg-milk-desc-1x.png);
-        background-repeat: no-repeat;
-        background-position: center;     
-        padding-bottom: 40px;
         
+        @media screen and(min-width: 1280px) {
+            background-position: bottom;
+            background-image: url(../images/about/bg-milk-desc-1x.png);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .about {
+              background-image: url(../images/about/bg-milk-desc-2x.png);
+            }
+          }
     }
 }
+
 .about-container{
 display: flex;
 flex-direction: column;
@@ -63,7 +56,6 @@ align-items: center;
         justify-content: space-between;
         }
         @media screen and(min-width: 1280px) {
-            // flex-direction: row;
             justify-content: center;
         }
 }
@@ -87,10 +79,10 @@ align-items: center;
 
 
 .how-its-made-title{
-    width: 100%;
-    margin: 0 auto;
+width: 100%;
+margin: 0 auto;
 color:  #D41443;
- font-family:  Titan One;
+font-family:  Titan One;
 font-style: normal;
 font-size: 34px;
 line-height: calc(39/34);
@@ -123,8 +115,8 @@ width: 100%;
 }
 
 .how-its-made-article{
- color:  #000000;
- font-family: DM Sans;
+color:  #000000;
+font-family: DM Sans;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -236,7 +228,7 @@ background-color: #FFFFFF;
 border-radius: 22px;
 width: 100%;
 height: 44px;
-font-family: DM Sans;
+font-family: "DM Sans";
 font-style: normal;
 font-weight: bold;
 font-size: 14px;
@@ -260,7 +252,19 @@ line-height: calc(21/16);
    }
 }
 
+.read-more-button:hover  ,
+.read-more-button:focus {
+   background-color: #D41443;
+   color: #FFFFFF;
+}
+
+.read-more-button:hover .read-more-button-icon ,
+.read-more-button:focus .read-more-button-icon{
+   fill: #FFFFFF;
+}
+
 .read-more-button-icon{
+    fill: #D41443;
     margin-left: 14px;
 }
 .how-its-made-cow-picture{
@@ -282,7 +286,3 @@ line-height: calc(21/16);
     flex-direction: column;
 }
 
-// .how-its-made-text-wrapper{
-//     // padding-left: 50px;
-//     // padding-right: 50px;
-// }
