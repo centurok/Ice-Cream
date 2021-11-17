@@ -1,6 +1,6 @@
 .gallery {
   padding-bottom: 80px;
-  width: 100%;
+  min-width: 100%;
   background: linear-gradient(to bottom, $thirteenth 40%, $first 40%);
 } 
 
@@ -9,14 +9,14 @@
   margin: 0 auto;
     @media screen and (min-width: 480px) {
     padding-bottom: 80px; 
-    width: 480px;
+    // width: 480px;
   }
   @media screen and (min-width: 768px){
     padding-bottom: 120px; 
-    width: 768px;
+    // width: 768px;
   }
   @media screen and (min-width: 1280px){
-    width: 1280px;
+    // width: 1280px;
   }
 }
 
@@ -32,9 +32,17 @@
 }
 
 .grid-item--width1{
-width: 15%;
+width: 12%;
 }
 
 .grid-item--width2{
-  width: 26%;
+  width: 35%;
+}
+
+.grid-item--width3{
+  width: 25%;
+}
+
+.grid-item--width4{
+  width: 20%;
 }
