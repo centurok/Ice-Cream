@@ -1,10 +1,22 @@
-.gallery__foto {
-  width: 100%;
-}
+// .gallery__foto {
+//   width: 100%;
+// }
 
 .gallery {
   padding-bottom: 80px;
   @media screen and (min-width: 768px) {
     padding-bottom: 120px;
+  }
+}
+
+.grid {
+  background: #FFF5F6;
+  
+}
+
+.grid-item {
+  width: 20%;
+  img {
+      width: 100%;
   }
 }
