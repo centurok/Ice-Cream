@@ -92,7 +92,7 @@
         </ul>
         <ul class="contacts__buttons">
             <li class="button__items">
-                <button class="button__item" type="button">Our Locations
+                <button class="button__item" type="button" data-locations-open>Our Locations
                     <svg class="button__icon button__icon--white" width="7px" height="10px">
                         <use href="./images/contacts/symbol-defs1.svg#icon-vector2"></use>
                     </svg>
@@ -106,5 +106,33 @@
                 </button>
             </li>
         </ul>
+    </div>
+    <div class="backdrop__locations is-hidden" data-locations>
+        <div class="modal__locations">
+            <button type="button" class="locations__close-btn" data-locations-close>
+                <svg class="locations__close-icon">
+                    <use href="./images/symbol-defs.svg#close-icon"></use>
+                </svg>
+            </button>
+            <p class="locations__title">Visit our locations:</p>
+            <div class="map">
+                <iframe class="map__box"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.600955932157!2d-87.66311328450594!3d41.858415179223734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d00fc3f0f01%3A0xc4fa415aa948fb9c!2s1664%20S%20Blue%20Island%20Ave%2C%20Chicago%2C%20IL%2060608%2C%20USA!5e0!3m2!1sen!2sua!4v1637178975430!5m2!1sen!2sua"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p class="card__address--map">1664 S Blue Island Avenu, Chicago, IL 60608, USA</p>
+                </div>
+            <div class="map">
+            <iframe class="map__box"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.250325705689!2d-118.2765488847277!3d33.96040488063109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c9bf0a693bf5%3A0xd46a5452b9ebeb4f!2s101%20W%20Manchester%20Ave%2C%20Los%20Angeles%2C%20CA%2090003%2C%20USA!5e0!3m2!1sen!2sua!4v1637179045934!5m2!1sen!2sua"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p class="card__address--map">101 W Manchester Avenu, Los Angeles, CA 90003, USA</p>
+                </div>
+            <div class="map">
+        <iframe class="map__box"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.3915763861023!2d-74.03393218453864!3d40.775404779324965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25789bef93011%3A0x873fe342a0c69e75!2s3215%20John%20F.%20Kennedy%20Blvd%2C%20Union%20City%2C%20NJ%2007087%2C%20USA!5e0!3m2!1sen!2sua!4v1637179096283!5m2!1sen!2sua"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p class="card__address--map">3215 John F. Kennedy Blvd, Union City, NJ 07087, USA</p>
+            </div>
+        </div>
     </div>
 </section>
