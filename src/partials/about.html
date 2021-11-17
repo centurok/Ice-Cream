@@ -1,59 +1,83 @@
 <section class="about" id="about">
-<div class="about-container container">
-<p class="how-its-made-tradition">tradition and love</p>
-<h2 class="how-its-made-title">how it’s made?</h2>
-<div class="how-its-made-wrapper">
-    <div class="how-its-made-picture-wrapper">
-        <picture class="how-its-made-cow-picture">
-            <source
-                srcset="
-                    images/about/cow-desc-1x.png   1x,
-                    images/about/cow-desc-2x.png  2x
-                    "
-                     media="(min-width: 1280px)"
-                    />
-            <source
-                srcset="
-                    images/about/cow-tab-1x.png   1x,
-                    images/about/cow-tab-2x.png   2x
-                    "
-                    media="(min-width: 773px)"
-                    />
-            <source
-                srcset="
-                    images/about/cow-mob-1x.png    1x,
-                    images/about/cow-mob-1x.png  2x
-                    "
-                    media="(min-width: 320px)"
-                    />
-             <img
-                     src="images/about/cow-desc-1x.png"
-                     class="how-its-made-cow-picture"
-                     alt="A happy cow with milk"
-                     />
-         </picture> 
-    </div>
-    <div class="how-its-made-text-wrapper">
-         <p class="how-its-made-article">
-              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-         </p>
-         <p  class="how-its-made-text">
-             Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-              Aliquam erat volutpat. Aenean accumsan.
-        </p>
-         <p  class="how-its-made-text-second">
-             Aliquam erat volutpat. Aenean accumsan.
-         </p>
+    <div class="about-container container">
+        <p class="how-its-made-tradition">tradition and love</p>
+        <h2 class="how-its-made-title">how it’s made?</h2>
+            <div class="how-its-made-wrapper">
+                <div class="how-its-made-picture-wrapper">
+                    <picture class="how-its-made-cow-picture">
+                        <source
+                            srcset="
+                                images/about/cow-desc-1x.png   1x,
+                                images/about/cow-desc-2x.png  2x
+                                "
+                                media="(min-width: 1280px)"
+                                />
+                        <source
+                            srcset="
+                                images/about/cow-tab-1x.png   1x,
+                                images/about/cow-tab-2x.png   2x
+                                "
+                                media="(min-width: 773px)"
+                                />
+                        <source
+                            srcset="
+                                images/about/cow-mob-1x.png    1x,
+                                images/about/cow-mob-1x.png  2x
+                                "
+                                media="(min-width: 320px)"
+                                />
+                        <img
+                                src="images/about/cow-desc-1x.png"
+                                class="how-its-made-cow-picture"
+                                alt="A happy cow with milk"
+                                />
+                    </picture> 
+                </div>
+                <div class="how-its-made-text-wrapper">
+                    <p class="how-its-made-article">
+                        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+                    </p>
+                    <p  class="how-its-made-text">
+                        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                        Aliquam erat volutpat. Aenean accumsan.
+                    </p>
+                    <p  class="how-its-made-text-second">
+                        Aliquam erat volutpat. Aenean accumsan.
+                    </p>
 
-         <button class="button read-more-button menu-open-btn menu-toggle js-open-menu"
-           aria-expanded="false" 
-           aria-controls="mobile-menu" 
-            type="button"
-            >Read more
-             <svg class="read-more-button-icon" width="10" height="10">  
-                    <use  href="./images/contacts/symbol-defs1.svg#icon-vector-button"> </use> 
-             </svg>
-         </button>
+                    <button class=" read-more-button menu-open-button menu-toggle js-open-menu"
+                    aria-expanded="false" 
+                    aria-controls="mobile-menu" 
+                        type="button"
+                        >Read more
+                        <svg class="read-more-button-icon" width="7px" height="10px">
+                            <use href="./images/contacts/vector-button.svg#icon-Vector-1-1"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
     </div>
-</div>
+
+    <div class="backdrop-second">
+        <div class="backdrop-second-wrapper">
+          <button type="button" class="backdrop-button-close mob-menu-close-btn menu-close-btn">
+            <svg width="17" height="17">
+                <use class="icon-close-menu" href="./images/symbol-defs.svg#close"></use>
+            </svg>
+          </button>
+          <p class="how-its-made-backdrop-title">How it`s <span class="really">really</span> made</p>
+          <ul class="how-its-made-backdrop-list">
+              <li  class="how-its-made-backdrop-item">Step 1
+                <p class="how-its-made-backdrop-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod autem laborum magni, itaque voluptatem suscipit vel reprehenderit inventore fuga porro, architecto vitae voluptatibus accusamus animi libero tempora eius quasi dignissimos.</p>
+              </li>
+              <li class="how-its-made-backdrop-item">Step 2
+                <p  class="how-its-made-backdrop-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maiores cum soluta perspiciatis. Exercitationem velit, aut dolorum esse commodi impedit, nobis voluptatem aspernatur vel labore et, rerum repudiandae saepe ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+              </li>
+              <li class="how-its-made-backdrop-item">Step 3
+                  <p class="how-its-made-backdrop-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi consequuntur, ab ratione eos porro cumque id sunt nostrum veniam deleniti delectus, rerum eligendi odio quasi! Hic facere a aliquam.</p>
+              </li>
+          </ul>
+          <button class="who-makes-button button" type="button"> <span class="who">Who</span> makes it?</button>
+        </div>
+     </div>
 </section>

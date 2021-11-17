@@ -6,7 +6,8 @@ padding-top: 125px;
 background-image: url(../images/about/bg-milk-mob-1x.png);
 background-repeat: no-repeat;
 max-width: 1600px;
-background-position: bottom;
+background-size: contain;
+background-position: 50% 85%;
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -21,6 +22,7 @@ background-position: bottom;
    }
         
         @media screen and(min-width: 1280px) {
+            background-size: contain;
             background-position: bottom;
             background-image: url(../images/about/bg-milk-desc-1x.png);
             @media (min-device-pixel-ratio: 2),
@@ -79,7 +81,6 @@ align-items: center;
 
 
 .how-its-made-title{
-width: 100%;
 margin: 0 auto;
 color:  #D41443;
 font-family:  Titan One;
@@ -266,6 +267,9 @@ line-height: calc(21/16);
 .read-more-button-icon{
     fill: #D41443;
     margin-left: 14px;
+    width: 10;
+     height:10;
+
 }
 .how-its-made-cow-picture{
     width: 100%;
@@ -286,3 +290,174 @@ line-height: calc(21/16);
     flex-direction: column;
 }
 
+.backdrop-second{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #E17992;
+    top: 0;
+    left: 0;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+.backdrop-button-close{
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.backdrop-button-close:hover .icon-close-menu,
+.backdrop-button-close:focus .icon-close-menu{
+    fill: #D41443;
+}
+
+.backdrop-second-wrapper{
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and(min-width: 773px) {
+        padding: 50px 50px 0 50px;
+       }
+       @media screen and(min-width: 773px) {
+        padding: 80px 80px 0 80px;
+       }
+}
+
+.really{
+    margin: 0 auto;
+    color: #D41443;
+    font-family:  Titan One;
+    font-style: normal;
+    font-size: 34px;
+    line-height: calc(39/34);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    @media screen and(min-width: 773px) {
+        font-size: 58px;
+        line-height: calc(66/58);
+       }
+
+}
+
+.how-its-made-backdrop-title{
+    margin: 0 auto;
+    color: #ffffff;
+    font-family:  Titan One;
+    font-style: normal;
+    font-size: 28px;
+    line-height: calc(35/28);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    @media screen and(min-width: 773px) {
+        margin-bottom: 30px;
+       }
+       @media screen and(min-width: 773px) {
+        font-size: 58px;
+        line-height: calc(66/58);
+       }
+
+}
+.how-its-made-backdrop-text{
+    text-indent: 1.5em; 
+    color: #ffffff;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(19/12);
+    @media screen and(min-width: 773px) {
+        font-size: 14px;
+        line-height: calc(22/14);
+       }
+       @media screen and(min-width: 773px) {
+        font-size: 18px;
+        line-height: calc(30/18);
+       }
+
+
+}
+
+.how-its-made-backdrop-item{
+    color:  #D41443;
+    font-family:  Titan One;
+    font-style: normal;
+    font-size: 18px;
+    line-height: calc(21/18);
+    @media screen and(min-width: 773px) {
+
+        margin-bottom: 15px;
+       }
+       @media screen and(min-width: 773px) {
+
+        margin-bottom: 40px;
+       }
+}
+.how-its-made-backdrop-item:last-child{
+    margin-bottom: 15px;
+
+    @media screen and(min-width: 773px) {
+
+        margin-bottom: 45px;
+       }
+}
+.who{
+    color: #D41443;
+    font-family:  Titan One;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+}
+
+
+.who-makes-button{
+    text-align: center;
+    color: #D41443;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    height: 40px;
+    font-family:  Titan One;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: calc(18/12);
+    border: none;
+    cursor: pointer;
+    @media screen and(min-width: 773px) {
+        height: 44px;
+       width: 200px;
+       font-size: 16px;
+       line-height: calc(18/16);
+       }
+}
+
+.who-makes-button:hover,
+.who-makes-button:focus{
+    background-color: #D41443;;
+    color: #FFFFFF;
+}
+.who-makes-button:hover .who,
+.who-makes-button:focus  .who{
+    color: #FFFFFF;
+}
