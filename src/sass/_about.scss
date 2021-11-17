@@ -12,10 +12,9 @@ background-position: 50% 85%;
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .about {
     background-image: url(../images/about/bg-milk-mob-2x.png);
   }
-}
+
 
    @media screen and(min-width: 773px) {
     background-image: none;
@@ -28,13 +27,11 @@ background-position: 50% 85%;
             background-image: url(../images/about/bg-milk-desc-1x.png);
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                .about {
+            (min-resolution: 2dppx) { 
                     background-size: contain;
                     background-position: bottom;
               background-image: url(../images/about/bg-milk-desc-2x.png);
             }
-        }
     }
 }
 
