@@ -119,27 +119,10 @@
     @media screen and (min-width: 1280px) {
         @include font ('DM Sans', 16px, 500, 1.86, null, $third);
         background-image: repeating-linear-gradient(transparent, transparent 29px, #e1e1e1 0, #e1e1e1 30px, transparent 0, transparent 58px, #e1e1e1 0, #e1e1e1 61px);
-        // padding: 45px 0px 40px 0px;
+        
     }
 }
 
-
-/* position: relative;
-    z-index: 1000;
-    @include font ('DM Sans', 12px, 500, 2.58, null, $third);
-    font-style: normal;
-    text-align: center;
-    padding: 45px 10px 25px 10px;
-    background-position-y: 10px;
-    background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
-    @media screen and (min-width: 768px) {
-        @include font ('DM Sans', 14px, 500, 2.16, null, $third);
-        padding: 45px 80px 35px 80px;
-    }
-    @media screen and (min-width: 1280px) {
-        @include font ('DM Sans', 16px, 500, 1.86, null, $third);
-        padding: 45px 85px 40px 85px;
-    }*/
 
 
 /*_____________________градиент_________________*/
@@ -147,8 +130,6 @@
 .сustomer__review--grad {
     background-repeat: repeat;
     background-position: 10px;
-    // background-image: repeating-linear-gradient(to top, transparent 0 30px, #e1e1e1 31px);
-    //background: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
