@@ -186,13 +186,44 @@ ul {
   font-size: 12px;
   line-height: 1.5;
   color: $sixth;
+  &--map {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $fifth;
+  }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.66;
+    &--map {
+      font-size: 14px;
+      line-height: 1.66;
+      text-align: center;
+      font-family: Titan One;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $fifth;
+    }
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.83;
+    &--map {
+      text-align: center;
+      font-family: Titan One;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $fifth;
+    }
   }
 }
 .card__schedule {
@@ -333,4 +364,119 @@ ul {
   &--white {
     margin-left: 8px;
   }
+}
+.backdrop__locations {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    .modal {
+      transform: scale(2);
+    }
+  }
+  @media screen and (min-width: 300px) {
+    padding: 15px;
+    overflow-y: scroll;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 159px;
+    overflow-y: scroll;
+  }
+}
+
+.modal__locations {
+  position: relative;
+  max-width: 450px;
+  min-height: 609px;
+  padding: 40px;
+  background-color: $thirteenth;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1280px) {
+    min-width: 928px;
+    min-height: 581px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    min-width: 600px;
+    min-height: 581px;
+  }
+}
+
+.locations__close-icon {
+  width: 18px;
+  height: 18px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.locations__close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: $first;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $second;
+  }
+}
+
+.locations__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $fifth;
+  @media screen and (min-width: 320px) {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    text-align: center;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1279px) {
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    text-align: center;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+.map {
+  height: 90%;
+}
+.map__box {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
 }
