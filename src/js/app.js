@@ -5,7 +5,7 @@ window.onload = () => {
 
     const masonry = new Masonry(grid, {
         itemSelector: '.grid-item',
-        gutter: 6,
+        gutter: 5,
         originLeft: false,
         horizontalOrder: false,
         // horizontalOrder: false,
