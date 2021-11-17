@@ -7,7 +7,6 @@ padding-bottom: 40px;
 padding-top: 125px;
 background-image: url(../images/about/bg-milk-mob-1x.png);
 background-repeat: no-repeat;
-max-width: 1600px;
 background-size: contain;
 background-position: 50% 85%;
 @media (min-device-pixel-ratio: 2),
@@ -31,9 +30,11 @@ background-position: 50% 85%;
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 .about {
+                    background-size: contain;
+                    background-position: bottom;
               background-image: url(../images/about/bg-milk-desc-2x.png);
             }
-          }
+        }
     }
 }
 
