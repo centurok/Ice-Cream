@@ -1,10 +1,18 @@
-<header class="header container">
+<header class="header container" id="home">
     <div class="main-header">
         <a href="" class="logo link">
             <picture>
+                 <source 
+                    srcset="./images/logo/logo-desc-1x.png 1x,
+                            ./images/logo/logo-desc-2x.png 2x"
+                    media="(min-width: 1280px )" >
+                 <source 
+                    srcset="./images/logo/logo-tab-1x.png 1x,
+                            ./images/logo/logo-tab-2x.png 2x"
+                    media="(min-width: 768px )" >
                 <source 
-                    srcset="./images/logo/logo-1x.png 1x,
-                            ./images/logo/logo-2x.png 2x"
+                    srcset="./images/logo/logo-mob-1x.png 1x,
+                            ./images/logo/logo-mob-2x.png 2x"
                     media="(min-width: 320px )" >
                                     
                 <img
@@ -13,13 +21,13 @@
                     width="199">
             </picture>
         </a>
-    <nav class="header__menu menu">
-      <ul class="menu__list list">
-          <li><a href="#home" class="menu__link">Home</a></li>
-          <li><a href="#gallery" class="menu__link">About us</a></li>
-          <li><a href="#about" class="menu__link">How it’s made?</a></li>
-          <li><a href="#products" class="menu__link">Our products</a></li>
-          <li><a href="#contacts" class="menu__link">Contact</a></li>
+    <nav class="header__menu nav-menu">
+      <ul class="nav-menu__list list">
+          <li class="nav-menu__item"><a href="#home" class="nav-menu__link link active">Home</a></li>
+          <li class="nav-menu__item"><a href="#gallery" class="nav-menu__link link">About us</a></li>
+          <li class="nav-menu__item"><a href="#about" class="nav-menu__link link">How it’s made?</a></li>
+          <li class="nav-menu__item"><a href="#products" class="nav-menu__link link">Our products</a></li>
+          <li class="nav-menu__item"><a href="#contacts" class="nav-menu__link link">Contact</a></li>
       </ul>             
     </nav>
         <div class="btn-wrapper">
@@ -31,7 +39,7 @@
                 <use class="icon-open-menu" href="./images/symbol-defs.svg#burger"></use>
             </svg>
         </button>
-        <button type="button" class="tab-modal-btn">Buy now
+        <button type="button" class="tab-modal-btn" data-modal-open>Buy now
         <svg width="8" height="11" class="icon-mob-menu">
             <use  href="./images/symbol-defs.svg#buy-now"></use>
         </svg>
