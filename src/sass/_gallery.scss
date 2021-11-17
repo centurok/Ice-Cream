@@ -1,23 +1,25 @@
 .gallery {
   padding-bottom: 80px;
-  min-width: 80vw;
+  min-width: 100%;
   background: linear-gradient(to bottom, $thirteenth 40%, $first 40%);
 } 
+
+.gallery-wrapper {
+  padding-right: 40px;
+  width: 100%;
+}
 
 .grid {
   width: 100%;
   margin: 0 auto;
     @media screen and (min-width: 480px) {
     padding-bottom: 80px; 
-    // width: 480px;
+    
   }
   @media screen and (min-width: 768px){
     padding-bottom: 120px; 
-    // width: 768px;
   }
-  @media screen and (min-width: 1280px){
-    // width: 1280px;
-  }
+  
 }
 
 .grid-item {
