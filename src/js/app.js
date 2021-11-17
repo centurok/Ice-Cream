@@ -5,13 +5,13 @@ window.onload = () => {
 
     const masonry = new Masonry(grid, {
         itemSelector: '.grid-item',
-        gutter: 5,
-        originLeft: true,
-        horizontalOrder: true,
+        gutter: 6,
+        originLeft: false,
+        horizontalOrder: false,
         // horizontalOrder: false,
         percentPosition: true,
         resize: true,
-        columnWidth: 6,
+        columnWidth: 4,
     });
     masonry.on('layoutComplete', () => console.log('Layout Complete'));
 };
