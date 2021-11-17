@@ -88,7 +88,9 @@
     flex-basis: calc((100% - 6 * 15px) / 3);
     max-width: 330px;
     min-height: 525px;
-    margin-left: 15px;
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
   }
 }
 

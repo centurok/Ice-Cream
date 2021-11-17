@@ -191,8 +191,7 @@
     padding-bottom: 18px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 9px;
-    padding-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -205,8 +204,14 @@
   letter-spacing: 0.02em;
   width: 150px;
   margin: 0 auto;
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     line-height: 1.86;
     width: 276px;
   }
+
+  @media screen and(min-width: 1280px) {
+    height: 44px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+}
 }
