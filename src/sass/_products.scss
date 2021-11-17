@@ -319,6 +319,7 @@
 }
 
 .product-list__container-btn {
+  display: flex;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -327,6 +328,7 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  margin: auto;
   &:hover,
   &:focus {
     background-color: $second;

@@ -1,0 +1,27 @@
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+}
+
+.btn-danger {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $twelfth;
+    color: $second;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    outline: none;
+}
+
+.to-top__arrow {
+    fill: $first;
+    transform: rotate(270deg);
+}
