@@ -456,3 +456,205 @@
   height: 100%;
   border-radius: 14px;
 }
+.backdrop__franchise {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    .modal {
+      transform: scale(2);
+    }
+  }
+  @media screen and (min-width: 320px) {
+    padding: 15px;
+    overflow-y: scroll;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 159px;
+    overflow-y: scroll;
+  }
+}
+
+.modal__franchise {
+  position: relative;
+  max-width: 450px;
+  min-height: 609px;
+  padding: 40px;
+  background: $thirteenth;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1280px) {
+    max-width: 628px;
+    min-height: 581px;
+  }
+}
+
+.franchise__close-icon {
+  width: 18px;
+  height: 18px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise__close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: $first;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $second;
+  }
+}
+
+.franchise__title {
+  font-family: Titan One;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: $fifth;
+  @media screen and (min-width: 320px) {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    text-align: center;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1279px) {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    text-align: center;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 25px;
+    line-height: 1.86;
+  }
+}
+
+.franchise-field__input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 20px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border-color: $second;
+    outline: none;
+  }
+}
+
+.franchise-field__imput-label {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: $fifth;
+  margin-bottom: 4px;
+}
+
+.franchise-field__input-wrapper {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.franchise-field__input-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .franchise-field__input:focus + &,
+  .franchise-field__input:hover + & {
+    fill: $second;
+  }
+}
+
+.comments-wrap__text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  resize: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid $second;
+    outline: none;
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.franchise__btn {
+  display: block;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 55px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $first;
+  background-color: $second;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

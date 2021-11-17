@@ -99,7 +99,7 @@
                 </button>
             </li>
             <li class="button__items">
-                <button class="button__item button__item--second" type="button">Franchise
+                <button class="button__item button__item--second" type="button" data-franchise-open>Franchise
                     <svg class="button__icon" width="7px" height="10px">
                         <use href="./images/contacts/symbol-defs1.svg#icon-vectors-button"></use>
                     </svg>
@@ -133,6 +133,51 @@
             width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <p class="card__address--map">3215 John F. Kennedy Blvd, Union City, NJ 07087, USA</p>
             </div>
+        </div>
+    </div>
+    <div class="backdrop__franchise is-hidden" data-franchise>
+        <div class="modal__franchise">
+            <button type="button" class="franchise__close-btn" data-franchise-close>
+                <svg class="franchise__close-icon">
+                    <use href="./images/symbol-defs.svg#close-icon"></use>
+                </svg>
+            </button>
+            <p class="franchise__title">Leave your contact information below</p>
+            <form class="modal__form">
+                <div class="franchise__field">
+                    <label for="user-name" class="franchise-field__imput-label">Name</label>
+                    <span class="franchise-field__input-wrapper">
+                        <input type="text" name="user-name" id="user-name" class="franchise-field__input">
+                        <svg class="franchise-field__input-icon">
+                            <use href="./images/symbol-defs.svg#person"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="franchise-field">
+                    <label for="user-tel" class="franchise-field__imput-label">Phone number</label>
+                    <span class="franchise-field__input-wrapper">
+                        <input type="tel" name="user-tel" id="user-tel" class="franchise-field__input">
+                        <svg class="franchise-field__input-icon">
+                            <use href="./images/symbol-defs.svg#phone"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="franchise-field">
+                    <label for="user-email" class="franchise-field__imput-label">E-mail</label>
+                    <span class="franchise-field__input-wrapper">
+                        <input type="email" name="user-email" id="user-email" class="franchise-field__input">
+                        <svg class="franchise-field__input-icon">
+                            <use href="./images/symbol-defs.svg#email"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="franchise-field comments-wrap">
+                    <label for="user-coments" class="franchise-field__imput-label">Comments</label>
+                    <textarea name="user-coments" id="user-coments" placeholder="Any questions?"
+                        class="comments-wrap__text"></textarea>
+                </div>
+                <button type="submit" class="franchise__btn">Send</button>
+            </form>
         </div>
     </div>
 </section>
