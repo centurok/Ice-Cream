@@ -11,7 +11,7 @@ window.onload = () => {
         // horizontalOrder: false,
         percentPosition: true,
         resize: true,
-        columnWidth: 4,
+        columnWidth: 6,
     });
     masonry.on('layoutComplete', () => console.log('Layout Complete'));
 };
